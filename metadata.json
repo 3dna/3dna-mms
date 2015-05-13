@@ -1,7 +1,7 @@
 {
   "name": "puppet-mms",
   "version": "0.1.0",
-  "author": "hop@nationbuilder.com",
+  "author": "Justin Hoppensteadt <hop@nationbuilder.com>",
   "summary": "MongoDB Monitoring Service",
   "license": "Apache 2.0",
   "source": "git@github.com:3dna/puppet-mms.git",
