@@ -29,7 +29,7 @@
 #
 # === Authors
 #
-# Author Name <author@domain.com>
+# Justin Hoppensteadt <hop@nationbuilder.com>
 #
 # === Copyright
 #
@@ -39,3 +39,4 @@ class mms {
 
 
 }
+# vim: ft=puppet
