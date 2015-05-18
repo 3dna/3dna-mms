@@ -36,19 +36,9 @@
 # Copyright 2015 3dna
 #
 class mms {
-  include ::mms::install
-  include ::mms::config
-  include ::mms::service
-
-  Class["::mms::install"] -> Class["::mms::config"] ~> Class["::mms::service"]
-
-  anchor {
-    'mms::begin':
-      before => [Class['::mms::install'],Class['::mms::config']],
-      notify => Class['::mms::service'];
-    'mms::end':
-      require => Class['::mms::service'];
-  }
+  include mms::install
+  include mms::config
+  include mms::service
 
 }
 # vim: ft=puppet
