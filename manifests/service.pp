@@ -5,6 +5,7 @@ class mms::service inherits mms {
     ensure => running,
     enable => true,
     provider => 'upstart',
+    pattern => '/opt/mongodb-mms-automation/bin/mongodb-mms-automation-agent',
     require => [
       Package['mongodb-mms-automation-agent-manager'],
       File['/etc/mongodb-mms/automation-agent.config']

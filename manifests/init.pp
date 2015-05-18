@@ -37,6 +37,9 @@
 #
 class mms {
 
+  include mms::install
+  include mms::config
+  include mms::service
 
 }
 # vim: ft=puppet
