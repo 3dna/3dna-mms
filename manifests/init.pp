@@ -40,5 +40,16 @@ class mms {
   include mms::config
   include mms::service
 
+  Class['mms::install'] -> Class['mms::config'] ~> Class['mms::service']
+  Class['mms::install'] -> mms::Command <| |> ~> Class['mms::service']
+
+  anchor {
+    'mms::begin':
+      before => [Class['mms::install'],Class['mms::config']],
+      notify => Class['mms::service'];
+    'mms::end':
+      require => Class['mms::service'];
+  }
+
 }
 # vim: ft=puppet
