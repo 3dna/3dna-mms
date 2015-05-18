@@ -1,7 +1,7 @@
 {
   "name": "3dna-mms",
   "version": "0.1.0",
-  "author": "Justin Hoppensteadt <hop@nationbuilder.com>",
+  "author": "3dna",
   "summary": "MongoDB Monitoring Service",
   "license": "Apache 2.0",
   "source": "git@github.com:3dna/3dna-mms.git",
