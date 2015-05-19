@@ -3,7 +3,7 @@ class mms::config inherits mms {
 
   file {
   '/etc/mongodb-mms/automation-agent.config':
-    content => template($module_name << '/automation-agent.config.erb'),
+    content => template('mms/automation-agent.config.erb'),
     owner   => 'mongodb',
     group   => 'mongodb',
     mode    => '0644',
